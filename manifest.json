@@ -2,7 +2,7 @@
   "name": "AUTOBOOK - Carnet Entretien Intelligent",
   "short_name": "AUTOBOOK",
   "description": "Le carnet de santé numérique de votre véhicule avec analyse IA.",
-  "start_url": "/",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#E63946",

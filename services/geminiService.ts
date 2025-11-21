@@ -1,8 +1,8 @@
-
 import { GoogleGenAI, Type } from "@google/genai";
 import { Car, ManufacturerSpecs, TechnicalSpecs } from "../types";
 
-const API_KEY = process.env.API_KEY || '';
+// Safe access to environment variable for non-Node environments
+const API_KEY = (typeof process !== 'undefined' && process.env && process.env.API_KEY) ? process.env.API_KEY : '';
 
 // Helper to convert file to base64
 export const fileToGenerativePart = (file: File): Promise<string> => {
